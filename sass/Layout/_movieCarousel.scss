@@ -1,0 +1,132 @@
+.movieCarousel {
+  padding-top: 64px;
+  position: relative;
+  @include respond-to('sm') {
+    
+  }
+  .owl-carousel {
+    position: relative;
+    .item {
+      cursor: pointer;
+      img {
+        display: block;
+        width: 100%;
+        height: 650px;
+        @include respond-to('xl') {
+          height: 550px;
+        }
+        @include respond-to('lg') {
+          height: 400px;
+        }
+        @include respond-to('md') {
+          height: 300px;
+        }
+        @include respond-to('sm') {
+          height: 230px;
+        }
+      }
+
+      &:hover .movieCarousel__playBtn{
+        opacity: 1;
+      }
+
+      .movieCarousel__playBtn {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        width: 70px;
+        height: 70px;
+        border: 2px solid white;
+        line-height: 68px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: rgba(128, 128, 128, 0.5);
+        transition: all .4s;
+        opacity: 0;
+        &:hover {
+          opacity: 0.7;
+        }
+      }   
+    }
+
+    .owl-dots {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .owl-dot {
+        &:focus {
+          outline: none;
+        }
+        &:hover span{
+          background: #D6D6D6;
+        }
+        span {
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      .owl-dot.active span {
+        background: $color-red;
+      }
+    }
+  }
+
+  .owl-nav {
+    .owl-prev {
+      position: absolute;
+      top: 30%;
+      left: 10px;
+      @include respond-to('lg') {
+        top: 25%;
+      }
+      @include respond-to('md') {
+        top: 20%;
+      }
+      @include respond-to('sm') {
+        top: 10%;;
+      }
+      &:hover {
+        background: unset;
+      }
+      &:focus {
+        outline: none;
+      }
+      span {
+        font-size: 100px;
+        color: $color-gray5;
+        opacity: 0.7;
+      }
+    }
+
+    .owl-next {
+      position: absolute;
+      top: 30%;
+      right: 10px;
+      @include respond-to('lg') {
+        top: 25%;
+      }
+      @include respond-to('md') {
+        top: 20%;
+      }
+      @include respond-to('sm') {
+        top: 10%;;
+      }
+      &:hover {
+        background: unset;
+      }
+      &:focus {
+        outline: none;
+      }
+      span {
+        font-size: 100px;
+        color: $color-gray5;
+        opacity: 0.7;
+      }
+    }
+  }
+}

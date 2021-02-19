@@ -1,0 +1,93 @@
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  nav {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    .header__logo {
+      img {
+        width: 50px;
+      }
+    }
+
+    #headerNavbarSupportedContent { 
+      justify-content: flex-end;
+      ul.navbar-nav {
+        @media screen and (min-width: 992px) {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        
+        li {
+          padding-right: 10px;
+          a.nav-link {
+            font-size: $fs-2;
+            color: black;
+            font-weight: 500;
+            transition: all .2s;
+            &:hover {
+              color: $color-red;
+            }
+            @include respond-to('lg'){
+              text-align: center;
+            }
+          }
+        }
+
+        .header__login {
+          display: none;
+          text-decoration: none;
+          color: $color-gray5;
+          font-size: $fs-1 + 1;
+          margin-right: 10px;
+          text-align: center;
+          padding-bottom: 10px;
+          img {
+            width: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+          @include respond-to('lg'){
+            display: block;
+          }
+        }
+      }
+
+      .header__form {
+        @include respond-to('lg'){
+          display: none;
+        }
+        a {
+          text-decoration: none;
+          color: $color-gray5;
+          font-size: $fs-1 + 1;
+          margin-right: 10px;
+          img {
+            width: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+        }
+
+        .header__dropdown {
+          button {
+            background-color: #fff;
+            color: $color-gray5;
+            font-size: $fs-1 + 1;
+            border: 1px solid $color-gray4;
+            &:focus {
+              box-shadow: unset;
+            }
+          }
+          .dropdown-menu.show {
+            min-width: unset;
+          }
+        }
+      }
+    }
+  }
+}

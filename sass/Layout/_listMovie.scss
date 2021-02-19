@@ -1,0 +1,211 @@
+.listMovie {
+  .listMovie__onTop {
+    background: url(../img/back-news.png) no-repeat center center;
+    background-size: cover;
+    height: 100px;
+  }
+  .listMovie__logo {
+    border: 1px solid $color-gray1;
+    @include respond-to('md') {
+      border: none;
+    }
+    .nav-link {
+      background-color: transparent;
+      text-align: center;
+      padding: 15px 10px;
+      border-bottom: 1px solid $color-gray1;
+      &:hover img {
+        opacity: 1;
+      }
+      //responsive
+      @include respond-to('xl') {
+        padding: 0;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+      }
+
+      
+      
+    }
+    .nav-link.active img {
+      opacity: 1;
+    }
+    img {
+      width: 70px;
+      opacity: 0.5;
+      transition: all 0.5s;
+      @include respond-to('md') {
+        // padding: 15px;
+        width: 50px;
+      }
+    }
+    .nav-pills {
+      @include respond-to('lg') {
+        flex-direction: row !important;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .listMovie__list {
+    .listMovie__list1 {
+      .listMovie__midOverflow {
+        height: 700px;
+        overflow-x: hidden;
+        @include respond-to('md') {
+          overflow-x: unset !important;
+          height: 100%;
+        }
+      }
+      .nav-link {
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: all .5s;
+        border-bottom: 1px solid $color-gray1;
+        &:hover {
+          opacity: 1;
+        }
+        .listMovie__img {
+          padding: 8px;
+          margin: 0;
+        }
+      }
+
+      .nav-link.active {
+        opacity: 1;
+      }
+
+      .listMovie__address1 {
+        color: $color-light-green;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .listMovie__address1--GLX {
+        color: $color-red;
+      }
+
+      .listMovie__address2 {
+        font-size: 14px;
+      }
+
+      .listMovie__address3 {
+        font-size: 14px;
+        color: $color-gray2;
+        margin: 0;
+      }
+
+      .listMovie__chiTiet {
+        font-size: 14px;
+        color: $color-red;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .listMovie__border {
+      border-left: 1px solid $color-gray1;
+      @include respond-to('md') {
+        margin-top: 70px;
+      }
+    }
+
+    #v-pills-tabContent {
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+      height: 700px;
+      overflow-x: hidden;
+        @include respond-to('md') {
+           overflow-x: unset;
+           height: unset;
+        }
+      .listMovie__contentLeft {
+        text-align: center;
+        a {
+          background-color: transparent;
+          text-decoration: none;
+          border: none;
+          
+          img {
+            width: 50px;
+          }
+        }
+      }
+
+      .listMovie__contentRight {
+        font-size: 12px;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        span {
+          background-color: $color-red;
+          color: white;
+          padding: 3px;
+          border-radius: 20%;
+        }
+
+        h3 {
+          font-size: 16px;
+          display: inline;
+          padding-left: 5px;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .listMovie__collapse {
+        width: 100%;
+        .row {
+          margin-right: 0;
+        }
+        .card {
+          border: none;
+          border-bottom: 1px solid $color-gray1;
+        }
+        h4 {
+          font-size: 17px;
+        }
+        .listMovie__hours {
+          background-color: rgba(246,246,246,.5);
+          padding: 10px;
+          max-width: 23%;         
+          margin: 0 auto;
+          text-align: center;
+          border: 1px solid $color-gray4;
+          border-radius: 5px;
+          cursor: pointer;
+          &:hover .listMovie__hours1 {
+            color: $color-red;
+          }
+          .listMovie__hours1 {
+            color: $color-green;
+            font-size: 18px;
+            font-weight: 700;
+            transition: all .2s;
+          }
+          .listMovie__hours2 {
+            color: $color-gray5;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

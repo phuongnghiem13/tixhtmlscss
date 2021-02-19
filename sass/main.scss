@@ -1,0 +1,26 @@
+//BASE
+@import './Base/normalized';
+@import './Base/reset';
+
+// VENDORS
+
+//Helper
+@import './Helper/extend';
+@import './Helper/mixin';
+@import './Helper/variables';
+
+//Layout
+@import './Layout/listMovie';
+@import './Layout/news';
+@import './Layout/freeApp';
+@import './Layout/footer';
+@import './Layout/header';
+@import './Layout/movieCarousel';
+@import './Layout/buyTickets';
+@import './Layout/tixHomeMovie';
+
+//Component
+
+//Page
+
+//Theme

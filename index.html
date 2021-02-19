@@ -1,0 +1,3913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- BS4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- FONT GG -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font-AWESome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+
+  <!-- OWL CAROUSEL -->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="./Magnific-Popup-master/dist/magnific-popup.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand header__logo" href="#">
+        <img src="./img/web-logo.png" alt="web-logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="headerNavbarSupportedContent">
+        <ul class="navbar-nav">
+          <a class="header__login" href="#">
+            <img src="./img/avatar.png" alt="avatar.png">
+            <span>Đăng nhập</span>
+          </a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Lịch chiếu <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cụm rạp <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tin tức <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ứng dụng <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="header__form form-inline my-2 my-lg-0">
+          <a href="#">
+            <img src="./img/avatar.png" alt="avatar.png">
+            <span>Đăng nhập</span>
+          </a>
+
+          <div class="dropdown header__dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-map-marker-alt mr-1"></i>
+              <span>Hồ Chí Minh</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Biên Hòa</a>
+              <a class="dropdown-item" href="#">Nha Trang</a>
+              <a class="dropdown-item" href="#">Bình Dương</a>
+              <a class="dropdown-item" href="#">Phan Thiết</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CAROUSEL -->
+  <section class="movieCarousel">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img class="img-fluid" src="./img/carousel1.png" alt="">
+        <a class="movieCarousel__playBtn popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+          <i class="fa fa-play"></i>
+        </a>
+      </div>
+      <div class="item">
+        <img class="img-fluid" src="./img/carousel2.jpg" alt="">
+        <a class="movieCarousel__playBtn popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+          <i class="fa fa-play"></i>
+        </a>
+      </div>
+      <div class="item">
+        <img class="img-fluid" src="./img/carousel3.png" alt="">
+        <a class="movieCarousel__playBtn popup-youtube " href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+          <i class="fa fa-play"></i>
+        </a>
+      </div>
+      <div class="item">
+        <img class="img-fluid" src="./img/carousel4.png" alt="">
+        <a class="movieCarousel__playBtn popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+          <i class="fa fa-play"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- BUY TICKET -->
+    <div class="buyTickets">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 buyTickets__movieName">
+            
+              <select class="form-control">
+                <option hidden>Phim</option>
+                <option>Tiệc trăng máu</option>
+                <option>Phù Thủy</option>
+                <option>Phù Thủy Học Đường</option>
+                <option>Chồng Người Ta</option>
+                <option>Tiệc trăng máu</option>
+                <option>Phù Thủy</option>
+                <option>Phù Thủy Học Đường</option>
+                <option>Chồng Người Ta</option>
+                <option>Tiệc trăng máu</option>
+                <option>Phù Thủy</option>
+                <option>Phù Thủy Học Đường</option>
+                <option>Chồng Người Ta</option>
+                <option>Tiệc trăng máu</option>
+                <option>Phù Thủy</option>
+                <option>Phù Thủy Học Đường</option>
+                <option>Chồng Người Ta</option>
+              </select>
+              
+          </div>
+  
+          <div class="col-12 col-sm-6 col-lg-2 buyTickets__movieName">
+            
+              <select class="form-control">
+                <option hidden>Rạp</option>
+              <option>Cinestar</option>
+              <option>BHD</option>
+              <option>GALAXY</option>
+              <option>Diamond</option>
+              </select>
+            
+          </div>
+  
+          <div class="col-12 col-sm-6 col-lg-2 buyTickets__movieName">
+            <select class="form-control">
+              <option hidden>Ngày xem</option>
+              <option>Thứ 2</option>
+              <option>Thứ 3</option>
+              <option>Thứ 4</option>
+              <option>Thứ 5</option>
+              <option>Thứ 6</option>
+              <option>Thứ 7</option>
+              <option>Chủ nhật</option>
+            </select>
+          </div>
+  
+          <div class="col-12 col-sm-6 col-lg-2 buyTickets__movieName">
+            <select class="form-control">
+              <option hidden>Suất chiếu</option>
+              <option>Thứ 2</option>
+              <option>Thứ 3</option>
+              <option>Thứ 4</option>
+              <option>Thứ 5</option>
+              <option>Thứ 6</option>
+              <option>Thứ 7</option>
+              <option>Chủ nhật</option>
+            </select>
+          </div>
+  
+          <div class="col-12 col-lg-2 buyTickets__divBuy">
+            <button class="btn btn-danger buyTickets__buy">MUA VÉ NGAY</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIX HOME MOVIE -->
+  <section class="tixHomeMovie">
+    <div class="container">
+      <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tixHomeMovie_dangChieu" role="tab" aria-controls="home" aria-selected="true">Đang chiếu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tixHomeMovie_sapChieu" role="tab" aria-controls="profile" aria-selected="false">Sắp chiếu</a>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tixHomeMovie_dangChieu" role="tabpanel" aria-labelledby="home-tab">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 tixHomeMovie_item">
+                  <div class="tixHomeMovie_wrap" href="#">
+                    <div class="tixHomeMovie_img">
+                      <img src="./img/tiec-trang-mau.jpg" alt="">
+                      <div class="tixHomeMovie_imgOverlay">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=nh0BklwPN9Q"><i class="fa fa-play"></i></a>
+                      </div>
+                      <span class="tixHomeMovie__score">
+                        <p>9.2</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                      </span>
+                    </div>
+
+                    <div class="tixHomeMovie_item--content">
+                      <span>C18</span>
+                      <h2>Tiệc trăng máu - Blood Moon Party</h2>
+                      <p>100 phút</p>
+                      <a class="tixHomeMovie_item--buyTicket" href="#">MUA VÉ</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 tixHomeMovie_item">
+                  <div class="tixHomeMovie_wrap" href="#">
+                    <div class="tixHomeMovie_img">
+                      <img src="./img/tiec-trang-mau.jpg" alt="">
+                      <div class="tixHomeMovie_imgOverlay">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=nh0BklwPN9Q"><i class="fa fa-play"></i></a>
+                      </div>
+                      <span class="tixHomeMovie__score">
+                        <p>9.2</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                      </span>
+                    </div>
+
+                    <div class="tixHomeMovie_item--content">
+                      <span>C18</span>
+                      <h2>Tiệc trăng máu - Blood Moon Party</h2>
+                      <p>100 phút</p>
+                      <a class="tixHomeMovie_item--buyTicket" href="#">MUA VÉ</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 tixHomeMovie_item">
+                  <div class="tixHomeMovie_wrap" href="#">
+                    <div class="tixHomeMovie_img">
+                      <img src="./img/tiec-trang-mau.jpg" alt="">
+                      <div class="tixHomeMovie_imgOverlay">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=nh0BklwPN9Q"><i class="fa fa-play"></i></a>
+                      </div>
+                      <span class="tixHomeMovie__score">
+                        <p>9.2</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                      </span>
+                    </div>
+
+                    <div class="tixHomeMovie_item--content">
+                      <span>C18</span>
+                      <h2>Tiệc trăng máu - Blood Moon Party</h2>
+                      <p>100 phút</p>
+                      <a class="tixHomeMovie_item--buyTicket" href="#">MUA VÉ</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 tixHomeMovie_item">
+                  <div class="tixHomeMovie_wrap" href="#">
+                    <div class="tixHomeMovie_img">
+                      <img src="./img/tiec-trang-mau.jpg" alt="">
+                      <div class="tixHomeMovie_imgOverlay">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=nh0BklwPN9Q"><i class="fa fa-play"></i></a>
+                      </div>
+                      <span class="tixHomeMovie__score">
+                        <p>9.2</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                      </span>
+                    </div>
+
+                    <div class="tixHomeMovie_item--content">
+                      <span>C18</span>
+                      <h2>Tiệc trăng máu - Blood Moon Party</h2>
+                      <p>100 phút</p>
+                      <a class="tixHomeMovie_item--buyTicket" href="#">MUA VÉ</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 tixHomeMovie_item">
+                  <div class="tixHomeMovie_wrap" href="#">
+                    <div class="tixHomeMovie_img">
+                      <img src="./img/tiec-trang-mau.jpg" alt="">
+                      <div class="tixHomeMovie_imgOverlay">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=nh0BklwPN9Q"><i class="fa fa-play"></i></a>
+                      </div>
+                      <span class="tixHomeMovie__score">
+                        <p>9.2</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                      </span>
+                    </div>
+
+                    <div class="tixHomeMovie_item--content">
+                      <span>C18</span>
+                      <h2>Tiệc trăng máu - Blood Moon Party</h2>
+                      <p>100 phút</p>
+                      <a class="tixHomeMovie_item--buyTicket" href="#">MUA VÉ</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 tixHomeMovie_item">
+                  <div class="tixHomeMovie_wrap" href="#">
+                    <div class="tixHomeMovie_img">
+                      <img src="./img/tiec-trang-mau.jpg" alt="">
+                      <div class="tixHomeMovie_imgOverlay">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=nh0BklwPN9Q"><i class="fa fa-play"></i></a>
+                      </div>
+                      <span class="tixHomeMovie__score">
+                        <p>9.2</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                      </span>
+                    </div>
+
+                    <div class="tixHomeMovie_item--content">
+                      <span>C18</span>
+                      <h2>Tiệc trăng máu - Blood Moon Party</h2>
+                      <p>100 phút</p>
+                      <a class="tixHomeMovie_item--buyTicket" href="#">MUA VÉ</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 tixHomeMovie_item">
+                  <div class="tixHomeMovie_wrap" href="#">
+                    <div class="tixHomeMovie_img">
+                      <img src="./img/tiec-trang-mau.jpg" alt="">
+                      <div class="tixHomeMovie_imgOverlay">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=nh0BklwPN9Q"><i class="fa fa-play"></i></a>
+                      </div>
+                      <span class="tixHomeMovie__score">
+                        <p>9.2</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                      </span>
+                    </div>
+
+                    <div class="tixHomeMovie_item--content">
+                      <span>C18</span>
+                      <h2>Tiệc trăng máu - Blood Moon Party</h2>
+                      <p>100 phút</p>
+                      <a class="tixHomeMovie_item--buyTicket" href="#">MUA VÉ</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 tixHomeMovie_item">
+                  <div class="tixHomeMovie_wrap" href="#">
+                    <div class="tixHomeMovie_img">
+                      <img src="./img/tiec-trang-mau.jpg" alt="">
+                      <div class="tixHomeMovie_imgOverlay">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=nh0BklwPN9Q"><i class="fa fa-play"></i></a>
+                      </div>
+                      <span class="tixHomeMovie__score">
+                        <p>9.2</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                      </span>
+                    </div>
+
+                    <div class="tixHomeMovie_item--content">
+                      <span>C18</span>
+                      <h2>Tiệc trăng máu - Blood Moon Party</h2>
+                      <p>100 phút</p>
+                      <a class="tixHomeMovie_item--buyTicket" href="#">MUA VÉ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="row">
+                <div class="col-3 tixHomeMovie_item"><h4>5</h4></div>
+                <div class="col-3 tixHomeMovie_item"><h4>6</h4></div>
+                <div class="col-3 tixHomeMovie_item"><h4>7</h4></div>
+                <div class="col-3 tixHomeMovie_item"><h4>8</h4></div>
+              </div>
+              <div class="row">
+                <div class="col-3 tixHomeMovie_item"><h4>5</h4></div>
+                <div class="col-3 tixHomeMovie_item"><h4>6</h4></div>
+                <div class="col-3 tixHomeMovie_item"><h4>7</h4></div>
+                <div class="col-3 tixHomeMovie_item"><h4>8</h4></div>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="tixHomeMovie_sapChieu" role="tabpanel" aria-labelledby="profile-tab">Sắp chiếu</div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- LIST MOVIE -->
+  <section class="listMovie">
+    <div class="container">
+      <div class="listMovie__onTop"></div>
+      <div class="row">
+        <div class="col-12 col-lg-1 listMovie__logo">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-bhd" role="tab"
+              aria-controls="v-pills-home" aria-selected="true">
+              <img class="img-fluid" src="./img/BHD-logo.png" alt="">
+            </a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-galaxy" role="tab"
+              aria-controls="v-pills-profile" aria-selected="false">
+              <img class="img-fluid" src="./img/Galaxy-logo.png" alt=""></a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-cns" role="tab"
+              aria-controls="v-pills-messages" aria-selected="false">
+              <img class="img-fluid" src="./img/CNS-logo.png" alt=""></a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-ddc" role="tab"
+              aria-controls="v-pills-settings" aria-selected="false">
+              <img class="img-fluid" src="./img/DDC-logo.png" alt=""></a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-mgs" role="tab"
+              aria-controls="v-pills-settings" aria-selected="false">
+              <img class="img-fluid" src="./img/MGS-logo.png" alt=""></a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-dcine" role="tab"
+              aria-controls="v-pills-settings" aria-selected="false">
+              <img class="img-fluid" src="./img/DCN.jpg" alt=""></a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-lotte" role="tab"
+              aria-controls="v-pills-settings" aria-selected="false">
+              <img class="img-fluid" src="./img/Lotte-logo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-11 listMovie__list">
+          <div class="tab-content" id="v-pills-tabContent">
+            <!-- BHD -->
+            <div class="tab-pane fade show active listMovie__list1" id="v-pills-bhd" role="tabpanel"
+              aria-labelledby="v-pills-home-tab">
+              <div class="row">
+                <div class="col-12 col-md-4 listMovie__midOverflow">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-bhd1"
+                      role="tab" aria-controls="v-pills-home" aria-selected="true">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD1.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1">BHD Star</span>
+                          <span class="listMovie__address2"> - Bitexco</span>
+                          <p class="listMovie__address3">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-bhd2" role="tab"
+                      aria-controls="v-pills-profile" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD2.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1">BHD Star</span>
+                          <span class="listMovie__address2"> - Vincom Thảo Điền</span>
+                          <p class="listMovie__address3">L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-bhd3" role="tab"
+                      aria-controls="v-pills-messages" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD3.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1">BHD Star</span>
+                          <span class="listMovie__address2"> - Vincom 3/2</span>
+                          <p class="listMovie__address3">L5-Vincom 3/2, 3C Đường 3/2, Q.10</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-bhd4" role="tab"
+                      aria-controls="v-pills-settings" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD4.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1">BHD Star</span>
+                          <span class="listMovie__address2"> - Phạm Hùng</span>
+                          <p class="listMovie__address3">L4-Satra Phạm Hùng, C6/27 Phạm Hùng, Bình Chánh</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-bhd5" role="tab"
+                      aria-controls="v-pills-settings" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD1.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1">BHD Star</span>
+                          <span class="listMovie__address2"> - Vincom Quang Trung</span>
+                          <p class="listMovie__address3">B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-bhd6" role="tab"
+                      aria-controls="v-pills-settings" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD6.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1">BHD Star</span>
+                          <span class="listMovie__address2"> - Vincom Lê Văn Việt</span>
+                          <p class="listMovie__address3">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 listMovie__border">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-bhd1" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD11.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample1">
+                          <div>
+                            <span>C16</span>
+                            <h3>Dị Nhân Thế Hệ Mới - The New Mutants -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample1">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">18:15</span>
+                                <span class="listMovie__hours2"> ~ 20:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">19:15</span>
+                                <span class="listMovie__hours2"> ~ 21:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">14:15</span>
+                                <span class="listMovie__hours2"> ~ 16:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD13.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample3">
+                          <div>
+                            <span>C16</span>
+                            <h3>Ác Quỷ Đối Đầu - Deliver Us From Evil -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample3">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="true" aria-controls="collapseExample4">
+                            <img class="img-fluid" src="./img/BHD14.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample4">
+                          <div>
+                            <span>C16</span>
+                            <h3>Greenland: Thảm Hoạ Thiên Thạch - Greenland -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample4">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD15.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample5">
+                          <div>
+                            <span>C16</span>
+                            <h3>Vì Sao Đưa Bạn Tới - Jungle Beat -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample5">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample6" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD16.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample6">
+                          <div>
+                            <span>C16</span>
+                            <h3>Phòng Thủ Địa Cầu - Invasion</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample6">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample7" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD18.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample7">
+                          <div>
+                            <span>C16</span>
+                            <h3>Mượn Xác - Unfamiliar -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample7">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-bhd2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD11.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample1">
+                          <div>
+                            <span>C16</span>
+                            <h3>Dị Nhân Thế Hệ Mới - The New Mutants -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample1">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">18:15</span>
+                                <span class="listMovie__hours2"> ~ 20:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">19:15</span>
+                                <span class="listMovie__hours2"> ~ 21:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">14:15</span>
+                                <span class="listMovie__hours2"> ~ 16:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-bhd3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD15.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample5">
+                          <div>
+                            <span>C16</span>
+                            <h3>Vì Sao Đưa Bạn Tới - Jungle Beat -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample5">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample6" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD16.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample6">
+                          <div>
+                            <span>C16</span>
+                            <h3>Phòng Thủ Địa Cầu - Invasion</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample6">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample7" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD18.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample7">
+                          <div>
+                            <span>C16</span>
+                            <h3>Mượn Xác - Unfamiliar -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample7">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-bhd4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD15.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample5">
+                          <div>
+                            <span>C16</span>
+                            <h3>Vì Sao Đưa Bạn Tới - Jungle Beat -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample5">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-bhd5" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD15.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample5">
+                          <div>
+                            <span>C16</span>
+                            <h3>Vì Sao Đưa Bạn Tới - Jungle Beat -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample5">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample6" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD16.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample6">
+                          <div>
+                            <span>C16</span>
+                            <h3>Phòng Thủ Địa Cầu - Invasion</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample6">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample7" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD18.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample7">
+                          <div>
+                            <span>C16</span>
+                            <h3>Mượn Xác - Unfamiliar -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample7">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-bhd6" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD13.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample3">
+                          <div>
+                            <span>C16</span>
+                            <h3>Ác Quỷ Đối Đầu - Deliver Us From Evil -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample3">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="true" aria-controls="collapseExample4">
+                            <img class="img-fluid" src="./img/BHD14.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample4">
+                          <div>
+                            <span>C16</span>
+                            <h3>Greenland: Thảm Hoạ Thiên Thạch - Greenland -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample4">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD15.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample5">
+                          <div>
+                            <span>C16</span>
+                            <h3>Vì Sao Đưa Bạn Tới - Jungle Beat -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample5">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- GALAXY -->
+            <div class="tab-pane fade listMovie__list1" id="v-pills-galaxy" role="tabpanel"
+              aria-labelledby="v-pills-profile-tab">
+              <div class="row">
+                <div class="col-12 col-md-4 listMovie__midOverflow">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                    <div class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-galaxy1"
+                      role="tab" aria-controls="v-pills-home" aria-selected="true">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD6.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">GLX</span>
+                          <span class="listMovie__address2"> - Linh Trung</span>
+                          <p class="listMovie__address3">Siêu thị Co.opXtra Thủ Đức 93</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-galaxy2" role="tab"
+                      aria-controls="v-pills-profile" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD5.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">GLX</span>
+                          <span class="listMovie__address2"> - Nguyễn Du</span>
+                          <p class="listMovie__address3">16 Nguyễn Du, Q.1</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-galaxy3"
+                      role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD4.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">GLX</span>
+                          <span class="listMovie__address2"> - Nguyễn Văn Quá</span>
+                          <p class="listMovie__address3">L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-galaxy4"
+                      role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD3.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">GLX</span>
+                          <span class="listMovie__address2"> - Vincom Thảo Điền</span>
+                          <p class="listMovie__address3">L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-galaxy5"
+                      role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD2.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">GLX</span>
+                          <span class="listMovie__address2"> - Vincom Thảo Điền</span>
+                          <p class="listMovie__address3">L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-galaxy6"
+                      role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD1.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">GLX</span>
+                          <span class="listMovie__address2"> - Phạm Văn Chí</span>
+                          <p class="listMovie__address3">L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-galaxy7"
+                      role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD2.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">GLX</span>
+                          <span class="listMovie__address2"> - Dương Quá</span>
+                          <p class="listMovie__address3">L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-8 listMovie__border">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-galaxy1" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD11.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample1">
+                          <div>
+                            <span>C16</span>
+                            <h3>Dị Nhân Thế Hệ Mới - The New Mutants -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample1">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">18:15</span>
+                                <span class="listMovie__hours2"> ~ 20:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">19:15</span>
+                                <span class="listMovie__hours2"> ~ 21:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">14:15</span>
+                                <span class="listMovie__hours2"> ~ 16:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD13.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample3">
+                          <div>
+                            <span>C16</span>
+                            <h3>Ác Quỷ Đối Đầu - Deliver Us From Evil -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample3">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="true" aria-controls="collapseExample4">
+                            <img class="img-fluid" src="./img/BHD14.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample4">
+                          <div>
+                            <span>C16</span>
+                            <h3>Greenland: Thảm Hoạ Thiên Thạch - Greenland -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample4">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD15.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample5">
+                          <div>
+                            <span>C16</span>
+                            <h3>Vì Sao Đưa Bạn Tới - Jungle Beat -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample5">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample6" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD16.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample6">
+                          <div>
+                            <span>C16</span>
+                            <h3>Phòng Thủ Địa Cầu - Invasion</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample6">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample7" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD18.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample7">
+                          <div>
+                            <span>C16</span>
+                            <h3>Mượn Xác - Unfamiliar -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample7">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-galaxy2" role="tabpanel"
+                      aria-labelledby="v-pills-profile-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="true" aria-controls="collapseExample4">
+                            <img class="img-fluid" src="./img/BHD14.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample4">
+                          <div>
+                            <span>C16</span>
+                            <h3>Greenland: Thảm Hoạ Thiên Thạch - Greenland -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample4">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD15.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample5">
+                          <div>
+                            <span>C16</span>
+                            <h3>Vì Sao Đưa Bạn Tới - Jungle Beat -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample5">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample6" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD16.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample6">
+                          <div>
+                            <span>C16</span>
+                            <h3>Phòng Thủ Địa Cầu - Invasion</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample6">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-galaxy3" role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="true" aria-controls="collapseExample4">
+                            <img class="img-fluid" src="./img/BHD14.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample4">
+                          <div>
+                            <span>C16</span>
+                            <h3>Greenland: Thảm Hoạ Thiên Thạch - Greenland -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample4">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample6" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD16.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample6">
+                          <div>
+                            <span>C16</span>
+                            <h3>Phòng Thủ Địa Cầu - Invasion</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample6">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-galaxy4" role="tabpanel"
+                      aria-labelledby="v-pills-settings-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample6" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD16.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample6">
+                          <div>
+                            <span>C16</span>
+                            <h3>Phòng Thủ Địa Cầu - Invasion</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample6">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample7" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD18.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample7">
+                          <div>
+                            <span>C16</span>
+                            <h3>Mượn Xác - Unfamiliar -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample7">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="v-pills-galaxy5" role="tabpanel"
+                      aria-labelledby="v-pills-settings-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD13.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample3">
+                          <div>
+                            <span>C16</span>
+                            <h3>Ác Quỷ Đối Đầu - Deliver Us From Evil -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample3">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="true" aria-controls="collapseExample4">
+                            <img class="img-fluid" src="./img/BHD14.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample4">
+                          <div>
+                            <span>C16</span>
+                            <h3>Greenland: Thảm Hoạ Thiên Thạch - Greenland -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample4">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-galaxy6" role="tabpanel"
+                      aria-labelledby="v-pills-settings-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD11.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample1">
+                          <div>
+                            <span>C16</span>
+                            <h3>Dị Nhân Thế Hệ Mới - The New Mutants -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample1">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">18:15</span>
+                                <span class="listMovie__hours2"> ~ 20:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">19:15</span>
+                                <span class="listMovie__hours2"> ~ 21:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">14:15</span>
+                                <span class="listMovie__hours2"> ~ 16:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD13.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample3">
+                          <div>
+                            <span>C16</span>
+                            <h3>Ác Quỷ Đối Đầu - Deliver Us From Evil -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample3">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="true" aria-controls="collapseExample4">
+                            <img class="img-fluid" src="./img/BHD14.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample4">
+                          <div>
+                            <span>C16</span>
+                            <h3>Greenland: Thảm Hoạ Thiên Thạch - Greenland -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample4">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD15.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample5">
+                          <div>
+                            <span>C16</span>
+                            <h3>Vì Sao Đưa Bạn Tới - Jungle Beat -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample5">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-galaxy7" role="tabpanel"
+                      aria-labelledby="v-pills-settings-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD13.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample3">
+                          <div>
+                            <span>C16</span>
+                            <h3>Ác Quỷ Đối Đầu - Deliver Us From Evil -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample3">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="true" aria-controls="collapseExample4">
+                            <img class="img-fluid" src="./img/BHD14.png" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample4">
+                          <div>
+                            <span>C16</span>
+                            <h3>Greenland: Thảm Hoạ Thiên Thạch - Greenland -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample4">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CNS -->
+            <div class="tab-pane fade listMovie__list1" id="v-pills-cns" role="tabpanel"
+              aria-labelledby="v-pills-messages-tab">
+              <div class="row">
+                <div class="col-12 col-md-4 listMovie__midOverflow">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-cns1"
+                      role="tab" aria-controls="v-pills-home" aria-selected="true">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD6.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">Cinestar</span>
+                          <span class="listMovie__address2"> - Trung Sơn</span>
+                          <p class="listMovie__address3">Siêu thị Co.opXtra Thủ Đức 93</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-cns2" role="tab"
+                      aria-controls="v-pills-profile" aria-selected="false">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD4.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">Cinestar</span>
+                          <span class="listMovie__address2"> - Linh Trung</span>
+                          <p class="listMovie__address3">Siêu thị Co.opXtra Thủ Đức 93</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 listMovie__border">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-cns1" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD11.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample1">
+                          <div>
+                            <span>C16</span>
+                            <h3>Dị Nhân Thế Hệ Mới - The New Mutants -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample1">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">18:15</span>
+                                <span class="listMovie__hours2"> ~ 20:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">19:15</span>
+                                <span class="listMovie__hours2"> ~ 21:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">14:15</span>
+                                <span class="listMovie__hours2"> ~ 16:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-cns2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DDC -->
+            <div class="tab-pane fade listMovie__list1" id="v-pills-ddc" role="tabpanel"
+              aria-labelledby="v-pills-settings-tab">
+              <div class="row">
+                <div class="col-12 col-md-4 listMovie__midOverflow">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-ddc1"
+                      role="tab" aria-controls="v-pills-home" aria-selected="true">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD4.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">DDC</span>
+                          <span class="listMovie__address2"> - Tân Phú</span>
+                          <p class="listMovie__address3">Siêu thị Co.opXtra Thủ Đức 93</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 listMovie__border">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-ddc1" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD11.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample1">
+                          <div>
+                            <span>C16</span>
+                            <h3>Dị Nhân Thế Hệ Mới - The New Mutants -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample1">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">18:15</span>
+                                <span class="listMovie__hours2"> ~ 20:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">19:15</span>
+                                <span class="listMovie__hours2"> ~ 21:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">14:15</span>
+                                <span class="listMovie__hours2"> ~ 16:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MEGANS -->
+            <div class="tab-pane fade listMovie__list1" id="v-pills-mgs" role="tabpanel"
+              aria-labelledby="v-pills-settings-tab">
+              <div class="row">
+                <div class="col-12 col-md-4 listMovie__midOverflow">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-mgs1"
+                      role="tab" aria-controls="v-pills-home" aria-selected="true">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD3.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">MEGA</span>
+                          <span class="listMovie__address2"> - Bình Tân</span>
+                          <p class="listMovie__address3">Siêu thị Co.opXtra Thủ Đức 93</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 listMovie__border">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-mgs1" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD11.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample1">
+                          <div>
+                            <span>C16</span>
+                            <h3>Dị Nhân Thế Hệ Mới - The New Mutants -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample1">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">18:15</span>
+                                <span class="listMovie__hours2"> ~ 20:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">19:15</span>
+                                <span class="listMovie__hours2"> ~ 21:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">14:15</span>
+                                <span class="listMovie__hours2"> ~ 16:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DCINE -->
+            <div class="tab-pane fade listMovie__list1" id="v-pills-dcine" role="tabpanel"
+              aria-labelledby="v-pills-settings-tab">
+              <div class="row">
+                <div class="col-12 col-md-4 listMovie__midOverflow">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-dcine1"
+                      role="tab" aria-controls="v-pills-home" aria-selected="true">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD3.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">DCine</span>
+                          <span class="listMovie__address2"> - Trung Linh</span>
+                          <p class="listMovie__address3">Siêu thị Co.opXtra Thủ Đức 93</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 listMovie__border">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-dcine1" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD11.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample1">
+                          <div>
+                            <span>C16</span>
+                            <h3>Dị Nhân Thế Hệ Mới - The New Mutants -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample1">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">18:15</span>
+                                <span class="listMovie__hours2"> ~ 20:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">19:15</span>
+                                <span class="listMovie__hours2"> ~ 21:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">14:15</span>
+                                <span class="listMovie__hours2"> ~ 16:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LOTTE -->
+            <div class="tab-pane fade listMovie__list1" id="v-pills-lotte" role="tabpanel"
+              aria-labelledby="v-pills-settings-tab">
+              <div class="row">
+                <div class="col-12 col-md-4 listMovie__midOverflow">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-lotte1"
+                      role="tab" aria-controls="v-pills-home" aria-selected="true">
+                      <div class="row">
+                        <div class="col-3 listMovie__img">
+                          <img class="img-fluid" src="./img/BHD6.jpg" alt="">
+                        </div>
+
+                        <div class="col-9">
+                          <span class="listMovie__address1 listMovie__address1--GLX">Lotte</span>
+                          <span class="listMovie__address2"> - Trung Sơn</span>
+                          <p class="listMovie__address3">Siêu thị Co.opXtra Thủ Đức 93</p>
+                          <a class="listMovie__chiTiet" href="#">[chi tiết]</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 listMovie__border">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-lotte1" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab">
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD11.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample1">
+                          <div>
+                            <span>C16</span>
+                            <h3>Dị Nhân Thế Hệ Mới - The New Mutants -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample1">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">18:15</span>
+                                <span class="listMovie__hours2"> ~ 20:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">19:15</span>
+                                <span class="listMovie__hours2"> ~ 21:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">14:15</span>
+                                <span class="listMovie__hours2"> ~ 16:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pt-3">
+                        <div class="col-2 listMovie__contentLeft">
+                          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">
+                            <img class="img-fluid" src="./img/BHD12.jpg" alt="">
+                          </a>
+                        </div>
+
+                        <div class="col-10 listMovie__contentRight" data-toggle="collapse" href="#collapseExample2">
+                          <div>
+                            <span>C16</span>
+                            <h3>Tenet -</h3>
+                            <p class="pt-1">100 phút - TIX 6.5 - IMDb 7</p>
+                          </div>
+                        </div>
+
+                        <div class="collapse.show listMovie__collapse" id="collapseExample2">
+                          <div class="card card-body">
+                            <h4>2D Digital</h4>
+                            <div class="row">
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+
+                              <div class="col-3 listMovie__hours">
+                                <span class="listMovie__hours1">16:15</span>
+                                <span class="listMovie__hours2"> ~ 18:15</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="movieNews">
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#movieNews1" role="tab" aria-controls="home"
+            aria-selected="true">Điện ảnh 24h</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#movieNews2" role="tab" aria-controls="profile"
+            aria-selected="false">Review</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#movieNews3" role="tab" aria-controls="contact"
+            aria-selected="false">Khuyến mãi</a>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active movieNews__content" id="movieNews1" role="tabpanel"
+          aria-labelledby="home-tab">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <a href="#">
+                <img class="img-fluid" src="./img/news1.png" alt="">
+                <h2>[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</h2>
+              </a>
+              <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu
+                chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get
+                Out”, “Us” hay ...</p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 0</span>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <a href="#">
+                <img class="img-fluid" src="./img/news2.png" alt="">
+                <h2>Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</h2>
+              </a>
+              <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12
+                ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1
+                doanh thu 2 tuần liên tiếp </p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 1</span>
+            </div>
+
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/news3.png" alt="">
+                <h2>Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</h2>
+              </a>
+              <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được
+                biết tới như một trong những đạo diễn thiên tài với khả </p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 0</span>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/news4.png" alt="">
+                <h2>Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</h2>
+              </a>
+              <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng
+                điện ảnh Hàn Quốc mới tiếp tục tái hợp trong </p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 0</span>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news5.png" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">
+                    6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood
+                  </a>
+                </div>
+              </div>
+
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news6.jpg" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a>
+                </div>
+              </div>
+
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news7.jpg" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a>
+                </div>
+              </div>
+
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news8.jpg" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade movieNews__content" id="movieNews2" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <a href="#">
+                <img class="img-fluid" src="./img/news2.png" alt="">
+                <h2>
+                  Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối liên kết</h2>
+              </a>
+              <p>Điểm nhấn của phim kinh dị năm 2020 chính là Tàn Tích Quỷ Ám</p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 0</span>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <a href="#">
+                <img class="img-fluid" src="./img/news1.png" alt="">
+                <h2>Review: Dinh Thự Oan Khuất (Ghost Of War)</h2>
+              </a>
+              <p>Tuy là một bộ phim có chất lượng tốt, nhưng có vẻ Dinh Thự Oan Khuất vẫn chưa đủ để đem khán giả trở
+                lại phòng vé! </p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 1</span>
+            </div>
+
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/news4.png" alt="">
+                <h2>‘BlacKkKlansman’ - cốc nước lạnh để người Mỹ thức tỉnh</h2>
+              </a>
+              <p>Tác phẩm nhận đề cử Phim truyện xuất sắc tại Oscar 2019 của đạo diễn Spike Lee là một lát cắt nữa về
+                nạn phân biệt chủng tộc - nỗi đau gây nhức </p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 0</span>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/news3.png" alt="">
+                <h2>American Sniper - Chính nghĩa hay phi nghĩa?</h2>
+              </a>
+              <p>American Sniper khắc họa một tay súng bắn tỉa “huyền thoại” của Hải quân Mỹ với 4 lần tham chiến ở
+                Trung Đông. Câu chuyện phim chậm rãi đưa người </p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 0</span>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news6.jpg" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</a>
+                </div>
+              </div>
+
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news5.png" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a>
+                </div>
+              </div>
+
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news8.jpg" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a>
+                </div>
+              </div>
+
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news7.jpg" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade movieNews__content" id="movieNews3" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <a href="#">
+                <img class="img-fluid" src="./img/news11.jpg" alt="">
+                <h2>[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</h2>
+              </a>
+              <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu
+                chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get
+                Out”, “Us” hay ...</p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 0</span>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <a href="#">
+                <img class="img-fluid" src="./img/news12.png" alt="">
+                <h2>Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</h2>
+              </a>
+              <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12
+                ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1
+                doanh thu 2 tuần liên tiếp </p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 1</span>
+            </div>
+
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/news13.jpg" alt="">
+                <h2>Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</h2>
+              </a>
+              <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được
+                biết tới như một trong những đạo diễn thiên tài với khả </p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 0</span>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="#">
+                <img class="img-fluid" src="./img/news14.jpg" alt="">
+                <h2>Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</h2>
+              </a>
+              <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng
+                điện ảnh Hàn Quốc mới tiếp tục tái hợp trong </p>
+              <span class="mr-2"><i class="far fa-thumbs-up"></i> 0</span>
+              <span><i class="far fa-comment-alt"></i> 0</span>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news15.jpg" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">
+                    6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood
+                  </a>
+                </div>
+              </div>
+
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news16.jpg" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">Gái Già Lắm Chiêu V – Những cuộc đời vương giả</a>
+                </div>
+              </div>
+
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news17.jpg" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a>
+                </div>
+              </div>
+
+              <div class="row news__item">
+                <div class="col-2 p-0 news__rightImg">
+                  <a href="#"><img class="img-fluid" src="./img/news18.jpg" alt=""></a>
+                </div>
+
+                <div class="col-10 news__right">
+                  <a href="#">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="movieNews__button">Xem thêm</button>
+    </div>
+  </section>
+
+  <!-- FREE APP -->
+  <section class="freeApp text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 freeApp__content">
+          <div class="freeApp__left">
+            <h2>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h2>
+            <h3>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</h3>
+            <button>App miễn phí - Tải về ngay</button>
+            <p>TIX có hai phiên bản <a href="#">iOS</a> & <a href="#">Android</a></p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 freeApp__content1 text-center">
+          <div class="freeApp__right">
+            <img class="freeApp__phone" src="./img/mobile.png" alt="">
+
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="./img/mobile1.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="./img/mobile2.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="./img/mobile3.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="./img/mobile4.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="./img/mobile5.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-5 text-light">
+    <div class="container">
+      <div class="row footer__top">
+        <div class="col-12 col-md-6 col-lg-4 footer__tix">
+          <h3>TIX</h3>
+          <div class="row footer__tixContent">
+            <div class="col-6 footer__tixItem footer__tixItem1">
+              <a class="footer__faq" href="#">FAQ</a>
+              <a class="footer__deal" href="#">Thỏa thuận sử dụng</a>
+            </div>
+
+            <div class="col-6 footer__tixItem footer__tixItem2">
+              <a class="footer__brandGuide" href="#">Brand Guidelines</a>
+              <a class="footer__security" href="#">Chính sách bảo mật</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-4 footer__partners">
+          <h3>ĐỐI TÁC</h3>
+          <div class="footer__partnersContent">
+            <div class="row">
+              <a href="#">
+                <img src="./img/logo1.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo2.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo3.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo4.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo5.png" alt="">
+              </a>
+            </div>
+
+            <div class="row">
+              <a href="#">
+                <img src="./img/logo6.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo7.jpg" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo8.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo9.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo10.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="row">
+              <a href="#">
+                <img src="./img/logo11.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo12.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo13.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo14.jpg" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo15.png" alt="">
+              </a>
+            </div>
+
+            <div class="row">
+              <a href="#">
+                <img src="./img/logo16.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo17.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo18.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo19.png" alt="">
+              </a>
+
+              <a href="#">
+                <img src="./img/logo20.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-2 footer__mobileApp">
+          <h3>MOBILE APP</h3>
+          <div class="footer__mobileApp--Item">
+            <a href="#"><img src="./img/apple-logo.png" alt=""></a>
+            <a href="#"><img src="./img/android-logo.png" alt=""></a>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-2 col-lg-2 footer__social">
+          <h3 class="pl-3">SOCIAL</h3>
+          <div class="footer__social--Item">
+            <a href=""><img src="./img/facebook-logo.png" alt=""></a>
+            <a href=""><img src="./img/zalo-logo.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bot">
+        <div class="row">
+          <div class="col-12 col-md-1 pr-0 footer__zion">
+            <img class="img-fluid" src="./img/zion-logo.jpg" alt="">
+          </div>
+
+          <div class="col-12 col-md-9 footer__botAddress">
+            <h3>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h3>
+            <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
+            <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,</p>
+            <p>đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh
+              cấp.</p>
+            <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+            <p>Email: <a class="footer__email" href="#">support@tix.vn</a></p>
+          </div>
+
+          <div class="col-12 col-md-2 footer__boCongThuong">
+            <a href="#"><img class="img-fluid" src="./img/BoCongThuong.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+
+      <!-- BS4 JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+      <!-- OWL CAROUSEL -->
+      <script src="./js/owl.carousel.min.js"></script>
+      <script>
+        $('.freeApp__right .owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          // nav: true,
+          autoplay: true,
+          autoplayHoverPause: true,
+          autoplayTimeout: 2000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1
+            },
+          }
+        })
+      </script>
+
+      <script>
+        $('.movieCarousel .owl-carousel').owlCarousel({
+          loop: true,
+          // margin: 10,
+          nav: true,
+          smartSpeed: 800,
+          // autoplay: true,
+          // autoplayHoverPause: true,
+          // autoplayTimeout: 2000,
+          responsive: {
+            0: {
+              items: 1
+            }
+          }
+        })
+      </script>
+
+      <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+      <script src=""></script>
+
+      <!-- Magnific Popup core JS file -->
+      <script src="./Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+
+      <script>
+        $(document).ready(function () {
+          $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+          });
+        });
+      </script>
+
+      <!-- ĐANG CHIẾU -->
+      
+      <script>
+        $('#tixHomeMovie_dangChieu .owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          smartSpeed: 800,
+          // autoplay: true,
+          // autoplayHoverPause: true,
+          // autoplayTimeout: 2000,
+          responsive: {
+            0: {
+              items: 1
+            }
+          }
+        })
+      </script>
+</body>
+
+</html>

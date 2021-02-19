@@ -1,0 +1,60 @@
+.buyTickets {
+  @media screen and (min-width: 992px){
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+    width: 100%;
+  }
+  
+  @include respond-to('lg'){
+    margin-top: 40px;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 5px #888888;;
+  }
+  .row {
+    height: 70px;
+    align-items: center;
+    @include respond-to('lg'){
+      height: unset;
+    }
+    .buyTickets__movieName{
+      padding-left: 10px;
+      padding-right: 0;
+      @include respond-to('lg'){
+        padding: 10px;
+      }
+      .form-control {
+        font-size: $fs-2;
+        &:focus {
+          outline: none;
+          border: 1px solid $color-gray5;
+          box-shadow: unset;
+        }
+      }
+    }
+
+    .buyTickets__divBuy {
+      padding-right: 0;
+      padding-left: 20px;
+      @include respond-to('lg'){
+        padding: 10px;
+      }
+      .buyTickets__buy {
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: $fs-2;
+        @include respond-to('lg'){
+          padding: 10px 0;
+          width: 100%;
+        }
+      }
+    }
+    
+    
+  }
+}
